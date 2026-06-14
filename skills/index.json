@@ -1,0 +1,7 @@
+[
+  {
+    "name": "long-term-memory",
+    "description": "RAG 長期記憶系統，支援 save / read / search / list / catalog / update 六個動作",
+    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/long-term-memory/SKILL.md"
+  }
+]
