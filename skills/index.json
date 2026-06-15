@@ -1,27 +1,32 @@
 [
-  {
-    "name": "long-term-memory",
-    "description": "RAG-backed long-term memory skill for save, read, search, list, catalog, and update workflows.",
-    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/long-term-memory/SKILL.md"
-  },
-  {
-    "name": "ntfy-push",
-    "description": "Send notifications through ntfy for task completion, alerts, and workflow updates.",
-    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/ntfy-push/SKILL.md"
-  },
-  {
-    "name": "k8s-ns-overview",
-    "description": "Quickly summarize Kubernetes namespace resources such as pods, services, configmaps, and resource usage.",
-    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/k8s-ns-overview/SKILL.md"
-  },
-  {
-    "name": "k8s-troubleshoot",
-    "description": "Read-only Kubernetes troubleshooting with kubectl for namespaces, pod restarts, CrashLoopBackOff, ImagePullBackOff, Pending pods, rollouts, services, configmaps, secrets, events, logs, probes, resources, and node scheduling issues.",
-    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/k8s-troubleshoot/SKILL.md"
-  },
-  {
-    "name": "file-edit-safety",
-    "description": "Preserve existing file bytes, encodings, BOM state, line endings, and unrelated edits when modifying files.",
-    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/file-edit-safety/SKILL.md"
-  }
+    {
+        "name":  "long-term-memory",
+        "description":  "RAG-backed long-term memory skill for save, read, search, list, catalog, and update workflows.",
+        "url":  "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/long-term-memory/SKILL.md"
+    },
+    {
+        "name":  "ntfy-push",
+        "description":  "Send notifications through ntfy for task completion, alerts, and workflow updates.",
+        "url":  "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/ntfy-push/SKILL.md"
+    },
+    {
+        "name":  "k8s-ns-overview",
+        "description":  "Quickly summarize Kubernetes namespace resources such as pods, services, configmaps, and resource usage.",
+        "url":  "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/k8s-ns-overview/SKILL.md"
+    },
+    {
+        "name":  "k8s-troubleshoot",
+        "description":  "Read-only Kubernetes troubleshooting with kubectl for namespaces, pod restarts, CrashLoopBackOff, ImagePullBackOff, Pending pods, rollouts, services, configmaps, secrets, events, logs, probes, resources, and node scheduling issues.",
+        "url":  "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/k8s-troubleshoot/SKILL.md"
+    },
+    {
+        "name":  "file-edit-safety",
+        "description":  "Preserve existing file bytes, encodings, BOM state, line endings, and unrelated edits when modifying files.",
+        "url":  "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/file-edit-safety/SKILL.md"
+    },
+    {
+        "name":  "todo-tracker",
+        "description":  "Track personal TODO items stored in RAG memory. Supports list, add, done, update, and clean actions.",
+        "url":  "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/todo-tracker/SKILL.md"
+    }
 ]
