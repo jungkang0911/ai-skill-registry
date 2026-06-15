@@ -8,5 +8,15 @@
     "name": "ntfy-push",
     "description": "透過 ntfy 發送推播通知，任務完成、失敗、需要注意時主動推播",
     "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/ntfy-push/SKILL.md"
+  },
+  {
+    "name": "k8s-ns-overview",
+    "description": "快速了解公司內部 k8s namespace 環境概況（pods、services、configmap 設定、resource 使用）",
+    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/k8s-ns-overview/SKILL.md"
+  },
+  {
+    "name": "k8s-troubleshoot",
+    "description": "快速使用 kubectl 對 Kubernetes 問題做唯讀排查與診斷。當使用者要查 namespace、pod restart、CrashLoopBackOff、ImagePullBackOff、Pending、deployment rollout、service 連線異常、configmap/secret、events、logs、probe 失敗、資源限制或節點排程問題時使用",
+    "url": "https://raw.githubusercontent.com/jungkang0911/ai-skill-registry/main/skills/k8s-troubleshoot/SKILL.md"
   }
 ]
