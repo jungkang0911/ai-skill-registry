@@ -4,6 +4,37 @@ description: 快速使用 kubectl 對 Kubernetes 問題做唯讀排查與診斷�
 user-invocable: true
 ---
 
+## Connectivity-First Rule
+
+When the user only asks to test connectivity, verify the smallest network
+surface first and do not start a full Kubernetes investigation unless the
+result points back to cluster runtime.
+
+Use this order:
+
+1. DNS resolution for the host.
+2. HTTP request to the exact URL, if a URL is provided.
+3. TCP port test only when HTTP cannot produce a response or when the user
+   explicitly asks for a port-level check.
+
+Interpretation:
+
+- If HTTP returns any status code such as `200`, `301`, `401`, `403`, `404`, or
+  `500`, the host and TCP port are reachable. Report the HTTP status and focus
+  next on path, virtual host, routing, authentication, or upstream app behavior.
+- If HTTP times out and TCP also fails, treat it as a network, firewall, DNS, or
+  target availability problem.
+- If a TCP test hangs but HTTP already returned a response, do not wait on or
+  over-weight the TCP probe. Use the HTTP response as stronger evidence that
+  port connectivity exists.
+- Keep the first response concise: confirmed DNS/IP, HTTP status, TCP result if
+  available, and the next concrete owner or check.
+
+Only expand into Kubernetes checks such as pods, services, endpoints, events,
+and logs when the user asks for K8s details, provides a namespace or workload,
+or the simple connectivity test suggests the failure is inside the cluster.
+
+
 使用此 skill 時，格式可為：
 - `/k8s-troubleshoot`
 - `/k8s-troubleshoot [namespace]`
